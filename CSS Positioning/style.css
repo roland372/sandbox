@@ -1,0 +1,47 @@
+h1 {
+    /* static is default, nothing will happen if you use that */
+    position: static;
+}
+
+.box {
+    border: 5px solid black;
+    height: 500px;
+    margin: 20px auto;
+    /* if we put relative here, we can now freely move items, 
+    that are children of our .box if we apply position: absolute to them*/
+    /* position: relative; */
+    width: 500px;
+}
+
+.item1,
+.item2 {
+    height: 150px;
+    width: 150px;
+}
+
+.item1 {
+    background-color: blue;
+    /* relative allows to move item from it's original position to
+    left, right, top or bottom */
+    /* position: relative; */
+    /* position: absolute;
+    bottom: 0px; */
+
+    /* fixed takes your screen, and it's placed whatever you specify it,
+     left, right, top or bottom and it's always gonna stick no matter if we scroll page  */
+    position: fixed;
+    left: 50px;
+}
+
+.item2 {
+    background-color: red;
+}
+
+nav {
+    color: white;
+    background: lightcoral;
+    /* sticky makes it, at the beginning it's gonna behave normally,
+    but when we scroll down past the certain point, it's gonna stick to a page */
+    position: sticky;
+    top: 0;
+}
