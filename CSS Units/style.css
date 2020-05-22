@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* if we change default font size of our HTML, 1rem will equal to that size */
+    /* font-size: 10px; */
+}
+
+
+/* .box {
+    font-size: 30px;
+} */
+
+
+p {
+    /* rem is relative to root HTML default font size */
+    /* 1rem equals 16px which is default font size */
+    /* 2rem will multiply default value, making it in that case 32px */
+    /* rem allows user to change font size from their browser settings */
+    /* when user changes font size, it will not only affect font, but also borders, padding, properties that have rem units as their size */
+    /* use rem units if you want to allow user to change size of the elements */
+    /* you should always use rem units as a font size */
+
+
+    /* here is user changes font size in browser settings, all properties will change their size */
+    /* border: 0.1rem black solid;
+    font-size: 1rem;
+    padding: 1rem; */
+
+    /* in this case if user changes font size, nothing will change */
+    /* border: 1.6px black solid;
+    font-size: 16px;
+    padding: 16px; */
+}
+
+/* em units are relative to it's parent element, if we set em size to property without parent element, it will be relative to root HTML, acting just like rem units */
+
+
+/* VH % VW */
+.box {
+    background: coral;
+    /* VH units will take x view height units/percentage of our browser, no matter the size of it */
+    /* 100vh will take up whole browser, even if we make our browser window smaller or bigger */
+    height: 100vh;
+
+    /* VW is the same thing as VH, just takes up width instead of height */
+    width: 50vw;
+}
