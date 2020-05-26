@@ -1,0 +1,58 @@
+body {
+    background: #333;
+}
+
+.box {
+    /* animation will begin after x seconds */
+    /* animation-delay: 2s; */
+    /* animation-direction: alternate; */
+    animation-duration: 4s;
+    /* when animation get's to the end, it will stay as a circle */
+    animation-fill-mode: forwards;
+    /* however many times we want animation to repeat */
+    animation-iteration-count: 2;
+    animation-name: myanimation;
+    /* animation speed */
+    /* animation-timing-function: ease-in; */
+    background: white;
+    height: 200px;
+    position: relative;
+    width: 200px;
+}
+
+@keyframes myanimation {
+    0% {
+        background-color: white;
+        border-radius: 0 0 0 0;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: red;
+        border-radius: 50% 0 0 0;
+        left: 300px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: green;
+        border-radius: 50% 50% 0 0;
+        left: 300px;
+        top: 300px;
+    }
+
+    75% {
+        background-color: blue;
+        border-radius: 50% 50% 50% 0;
+        left: 0px;
+        top: 300px;
+    }
+
+    100% {
+        background-color: white;
+        border-radius: 50% 50% 50% 50%;
+        left: 0px;
+        top: 0px;
+    }
+}
