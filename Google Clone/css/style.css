@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Global*/
+
+html,
+body {
+    font-family: Arial, sans-serif;
+    font-size: small;
+    height: 100%;
+    position: relative;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: flex-end
+}
+
+header nav ul {
+    margin: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+header button {
+    width: 100px;
+    height: 25px;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+/*Hero*/
+.hero {
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+
+.hero figure img,
+.searchbar {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*Searchbar*/
+.searchbar {
+    position: relative;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.searchbar input {
+    width: 500px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    padding: 0 35px;
+}
+
+.searchbar button {
+    position: absolute;
+    border: none;
+    background-color: white;
+}
+
+.searchbar .button1 {
+    top: 8px;
+    left: 10px;
+}
+
+.searchbar .button2 {
+    top: 8px;
+    right: 10px;
+}
+
+/*Search buttons*/
+.search-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-buttons button {
+    width: 150px;
+    height: 30px;
+    background-color: lightgray;
+    color: dimgray;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+/*Corona*/
+.corona {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.corona a {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/*Footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    height: 50px;
+    margin-top: 50px;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+}
