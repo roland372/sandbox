@@ -1,0 +1,124 @@
+body {
+    padding: 0;
+    background-color: #f1f1f1;
+    margin: auto;
+}
+
+/*Global*/
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/*Header*/
+header {
+    font-size: 14px;
+    padding: 5px;
+    margin: 0;
+    line-height: 1px;
+    float: right;
+}
+
+header input {
+    background-color: royalblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin: 5px;
+}
+
+/*Top Nav*/
+#top-nav {
+    clear: both;
+    margin-top: 50px;
+    text-align: center;
+    word-spacing: 10px;
+}
+
+section h1 a {
+    color: gray;
+    font-size: 30px;
+}
+
+#top-nav nav ul li {
+    display: inline-block;
+
+}
+
+#top-nav nav ul li a {
+    color: gray;
+    font-size: 20px;
+
+}
+
+/*Main*/
+main {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: auto;
+    padding: 15px;
+}
+
+main h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+}
+
+main p {
+    text-align: center;
+}
+
+main div form {
+    text-align: center;
+}
+
+
+main div form input {
+    width: 300px;
+    height: 25px;
+    margin: 10px 0
+}
+
+main div button {
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+main #bottom {
+    width: 250px;
+    margin: auto;
+    padding: 25px 0;
+}
+
+/*Footer*/
+
+footer nav ul {
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+footer nav ul li a {
+    color: gray;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
